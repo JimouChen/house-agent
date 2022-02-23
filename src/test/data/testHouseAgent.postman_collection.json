@@ -1,0 +1,744 @@
+{
+	"info": {
+		"_postman_id": "940d0d20-d34c-4a08-a4cf-04b9ef1b1325",
+		"name": "testHouseAgent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "testUser",
+			"item": [
+				{
+					"name": "findUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/findAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "啊啊哈",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123333",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "1345255252",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/user/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUserById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/update?userId=2&username=小张&password=233333&sex=1&phoneNumber=12333333313",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"update"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "2"
+								},
+								{
+									"key": "username",
+									"value": "小张"
+								},
+								{
+									"key": "password",
+									"value": "233333"
+								},
+								{
+									"key": "sex",
+									"value": "1"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "12333333313"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/find/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"find",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByPage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/findAll/1/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"findAll",
+								"1",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "小张",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "233333",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allSale",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/allSale/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"allSale",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allRent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/allRent/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"allRent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buyRecord",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/buyRecord/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"buyRecord",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rentInRecord",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/rentInRecord/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"rentInRecord",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saleRecord",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/saleRecord/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"saleRecord",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rentOutRecord",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/rentOutRecord/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"rentOutRecord",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buyHouse",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/buyHouse/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"buyHouse",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buyClick",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "houseId",
+									"value": "17",
+									"type": "text"
+								},
+								{
+									"key": "buyerId",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/user/buyClick/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"buyClick",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saleHouses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/saleHouse/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"saleHouse",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rentInHouse",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "houseId",
+									"value": "13",
+									"type": "text"
+								},
+								{
+									"key": "renterId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "rent_length",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/user/rentInHouse/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"rentInHouse",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rentOutHouses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/user/rentOutHouse/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"user",
+								"rentOutHouse",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userinfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/useri/info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"useri",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rentInClick",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "testAgent",
+			"item": [
+				{
+					"name": "addAgent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "agentName",
+									"value": "啊哈",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123232",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "13789891234",
+									"type": "text"
+								},
+								{
+									"key": "createTime",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "updateTime",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/agent/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"agent",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "testHouse",
+			"item": [
+				{
+					"name": "addHouseForm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "houseName",
+									"value": "商品房2号",
+									"type": "text"
+								},
+								{
+									"key": "ownerId",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "agentId",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "isPublished",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "isRent",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "isSold",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "isFinished",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "area",
+									"value": "233",
+									"type": "text"
+								},
+								{
+									"key": "rentMoney",
+									"value": "123.22",
+									"type": "text"
+								},
+								{
+									"key": "unitPrice",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "room",
+									"value": "三室二厅",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/house/addForm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"house",
+								"addForm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllHouse",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/house/findAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"house",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByOwnerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/house/findAll/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"house",
+								"findAll",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "manageHouse",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/house/manage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"house",
+								"manage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "testDemo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "\"Pp\"",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "\"m\"",
+							"type": "text"
+						},
+						{
+							"key": "hobby",
+							"value": "\"sing\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8181/user/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"user",
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
